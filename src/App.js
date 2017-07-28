@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Grid, Column, Container } from '@extjs/ext-react';
 
 class App extends Component {
   render() {
@@ -13,6 +14,23 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Grid 
+          height="200"
+          width="400"
+          title="Stocks"
+          shadow
+          margin={20}
+          style={{ textAlign: 'left' }}
+          store={{
+            data: [
+              { name: 'Microsoft', symbol: 'MSFT' },
+              { name: 'Apple', symbol: 'AAPL'}
+            ]
+          }}
+        >
+          <Column text="Name" dataIndex="name" flex={1}/>
+          <Column text="Symbol" dataIndex="symbol" flex={1}/>
+        </Grid>
       </div>
     );
   }

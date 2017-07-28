@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@extjs/ext-react": "^6.5.1",
+    "@extjs/reactor": "^1.1.0",
     "autoprefixer": "7.1.1",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
@@ -82,9 +84,16 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      "@extjs/reactor-babel-plugin"
     ]
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "@extjs/reactor-babel-plugin": "^1.1.0",
+    "@extjs/reactor-webpack-plugin": "^1.1.0"
   }
 }
