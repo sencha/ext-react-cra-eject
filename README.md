@@ -128,7 +128,7 @@ launch(<App />);
 
 ### 6. Remove the root div from index.html
 
-Since reactor's launch function makes it's own viewport div, you can from this line from src/index.html:
+Since reactor's launch function makes it's own viewport div, you can remove this line from src/index.html:
 
 ```HTML
 <div id="root"></div>
