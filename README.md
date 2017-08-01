@@ -1,6 +1,6 @@
 ## ext-react-cra-eject
 
-This project is a React app ejected from create-react-app v1.3.3 that has been modified to use ExtReact.
+This project is a React app ejected from create-react-app v1.3.3 that has been modified to use ExtReact.  All of the changes needed to get ExtReact working after ejecting from create-react-app are in [this commit](https://github.com/sencha/ext-react-cra-eject/commit/8462ef12a9e8bac1a7dcb70a15581b0bc33ec19d).
 
 ## Tags
 
