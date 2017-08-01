@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Grid, Column, Container } from '@extjs/ext-react';
+import { Grid, Column } from '@extjs/ext-react';
 
 class App extends Component {
   render() {
