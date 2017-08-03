@@ -4,7 +4,7 @@ This project is a React app ejected from create-react-app v1.3.3 that has been m
 
 ## Tags
 
-This repo provides several tags to help you understand the changes that need to be made to the ejected react app in order
+This repo provides tags to help you understand the changes that need to be made to the ejected react app in order
 to integrate ExtReact:
 
 ### before-eject
@@ -13,11 +13,7 @@ The state of the app just after initial creation, before ejecting.
 
 ### after-eject
 
-The state of the app directly after ejecting
-
-### with-ext-react
-
-The final state, with ExtReact working
+The state of the app directly after ejecting, before adding ExtReact.
 
 ## Setup
 
