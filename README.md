@@ -146,6 +146,19 @@ Sets the output path for the ExtReact bundle to static/js/ext-react, to match th
 }
 ```
 
+### 8. Add Ext as a global to the ESLint config
+
+In package.json, add Ext as a global by changing the eslintConfig to:
+
+```
+"eslintConfig": {
+  "extends": "react-app",
+  "globals": {
+    "Ext": true
+  }
+}
+```  
+
 That should be all that's required.  Once you've completed these steps, you can import components from ExtReact as seen here:
 
 https://github.com/sencha/ext-react-cra-eject/blob/master/src/App.js#L4

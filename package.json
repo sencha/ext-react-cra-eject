@@ -90,7 +90,10 @@
     ]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "globals": {
+      "Ext": true
+    }
   },
   "devDependencies": {
     "@extjs/reactor-babel-plugin": "^1.1.0",

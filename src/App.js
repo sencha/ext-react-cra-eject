@@ -4,6 +4,14 @@ import './App.css';
 import { Grid, Column } from '@extjs/ext-react';
 
 class App extends Component {
+
+  store = new Ext.data.Store({
+    data: [
+      { name: 'Microsoft', symbol: 'MSFT' },
+      { name: 'Apple', symbol: 'AAPL'}
+    ]
+  })
+
   render() {
     return (
       <div className="App">
@@ -21,12 +29,7 @@ class App extends Component {
           shadow
           margin={20}
           style={{ textAlign: 'left' }}
-          store={{
-            data: [
-              { name: 'Microsoft', symbol: 'MSFT' },
-              { name: 'Apple', symbol: 'AAPL'}
-            ]
-          }}
+          store={this.store}
         >
           <Column text="Name" dataIndex="name" flex={1}/>
           <Column text="Symbol" dataIndex="symbol" flex={1}/>
